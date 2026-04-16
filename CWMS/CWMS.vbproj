@@ -79,6 +79,36 @@
     <Compile Include="Dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Payment.Designer.vb">
+      <DependentUpon>Payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenComReport.Designer.vb">
+      <DependentUpon>GenComReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenComReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenEmReport.Designer.vb">
+      <DependentUpon>GenEmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenEmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenTransaction.Designer.vb">
+      <DependentUpon>GenTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.Designer.vb">
+      <DependentUpon>Start.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Start.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +137,18 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenComReport.resx">
+      <DependentUpon>GenComReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenEmReport.resx">
+      <DependentUpon>GenEmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenTransaction.resx">
+      <DependentUpon>GenTransaction.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +157,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start.resx">
+      <DependentUpon>Start.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -128,6 +173,24 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1111111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\222222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3333333333.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_9701-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Apr 9, 2026, 04_40_18 PM.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

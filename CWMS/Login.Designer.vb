@@ -152,10 +152,10 @@ Partial Class Login
         '
         Me.PictureBox5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox5.BackColor = System.Drawing.Color.Navy
-        Me.PictureBox5.Location = New System.Drawing.Point(429, 308)
+        Me.PictureBox5.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.PictureBox5.Location = New System.Drawing.Point(434, 312)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(265, 171)
+        Me.PictureBox5.Size = New System.Drawing.Size(255, 165)
         Me.PictureBox5.TabIndex = 10
         Me.PictureBox5.TabStop = False
         '
@@ -178,6 +178,7 @@ Partial Class Login
         Me.Controls.Add(Me.PictureBox4)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
