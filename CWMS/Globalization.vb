@@ -13,7 +13,7 @@ Module Globalization
     Sub Connect()
         Try
             If sqlconn.State = ConnectionState.Open Then sqlconn.Close() 'refresh connection
-            sqlconn.ConnectionString = "Server =DESKTOP-DHT9ALS\SQLEXPRESS; Database = db_CWMS; Trusted_Connection = True; MultipleActiveResultSets = True; "
+            sqlconn.ConnectionString = "Server =LocalHost\SQLEXPRESS; Database = db_CWMS; Trusted_Connection = True; MultipleActiveResultSets = True; "
             sqlconn.Open()
 
 
