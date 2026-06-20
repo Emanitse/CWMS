@@ -70,6 +70,10 @@ Public Class Dashboard
         With Start
             .TopLevel = False
             Panel1.Controls.Add(Start)
+            Payment.Close()
+            GenTransaction.Close()
+            GenEmReport.Close()
+            GenComReport.Close()
             .BringToFront()
             .Show()
             Time.Show()
@@ -83,6 +87,10 @@ Public Class Dashboard
         With Payment
             .TopLevel = False
             Panel1.Controls.Add(Payment)
+            Start.Close()
+            GenTransaction.Close()
+            GenEmReport.Close()
+            GenComReport.Close()
             .BringToFront()
             .Show()
             Time.Show()
@@ -96,6 +104,10 @@ Public Class Dashboard
         With GenTransaction
             .TopLevel = False
             Panel1.Controls.Add(GenTransaction)
+            Payment.Close()
+            Start.Close()
+            GenEmReport.Close()
+            GenComReport.Close()
             .BringToFront()
             .Show()
             Time.Show()
@@ -109,6 +121,10 @@ Public Class Dashboard
         With GenEmReport
             .TopLevel = False
             Panel1.Controls.Add(GenEmReport)
+            Payment.Close()
+            GenTransaction.Close()
+            Start.Close()
+            GenComReport.Close()
             .BringToFront()
             .Show()
             Time.Show()
@@ -122,6 +138,10 @@ Public Class Dashboard
         With GenComReport
             .TopLevel = False
             Panel1.Controls.Add(GenComReport)
+            Payment.Close()
+            GenTransaction.Close()
+            GenEmReport.Close()
+            Start.Close()
             .BringToFront()
             .Show()
             Time.Show()
@@ -159,5 +179,9 @@ Public Class Dashboard
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        Application.Exit()
     End Sub
 End Class

@@ -20,5 +20,7 @@ Public Class GenComReport
         RoundLabel(Label1, 20)
     End Sub
 
+    Private Sub GenComReport_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
 End Class

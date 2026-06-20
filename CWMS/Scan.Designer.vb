@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Start
+Partial Class Scan
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,42 +22,42 @@ Partial Class Start
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.txtScan = New System.Windows.Forms.TextBox()
+        Me.btnScan = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'txtScan
         '
-        Me.Button1.Location = New System.Drawing.Point(298, 71)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(206, 74)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Generate QR"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.txtScan.Location = New System.Drawing.Point(364, 146)
+        Me.txtScan.Name = "txtScan"
+        Me.txtScan.Size = New System.Drawing.Size(241, 20)
+        Me.txtScan.TabIndex = 0
         '
-        'Button2
+        'btnScan
         '
-        Me.Button2.Location = New System.Drawing.Point(1024, 71)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(206, 74)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Scan QR"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnScan.Location = New System.Drawing.Point(410, 172)
+        Me.btnScan.Name = "btnScan"
+        Me.btnScan.Size = New System.Drawing.Size(130, 41)
+        Me.btnScan.TabIndex = 1
+        Me.btnScan.Text = "Button1"
+        Me.btnScan.UseVisualStyleBackColor = True
         '
-        'Start
+        'Scan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1642, 181)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(1626, 450)
+        Me.Controls.Add(Me.btnScan)
+        Me.Controls.Add(Me.txtScan)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Start"
-        Me.Text = "Start"
+        Me.Location = New System.Drawing.Point(0, 368)
+        Me.Name = "Scan"
+        Me.Text = "Scan"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents txtScan As TextBox
+    Friend WithEvents btnScan As Button
 End Class
