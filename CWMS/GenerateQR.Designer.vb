@@ -23,7 +23,7 @@ Partial Class GenerateQR
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.CusID = New System.Windows.Forms.TextBox()
+        Me.text1 = New System.Windows.Forms.TextBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -38,15 +38,17 @@ Partial Class GenerateQR
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'CusID
+        'text1
         '
-        Me.CusID.Location = New System.Drawing.Point(47, 55)
-        Me.CusID.Name = "CusID"
-        Me.CusID.Size = New System.Drawing.Size(286, 20)
-        Me.CusID.TabIndex = 0
+        Me.text1.Enabled = False
+        Me.text1.Location = New System.Drawing.Point(47, 55)
+        Me.text1.Name = "text1"
+        Me.text1.Size = New System.Drawing.Size(286, 20)
+        Me.text1.TabIndex = 0
         '
         'ContextMenuStrip1
         '
@@ -154,11 +156,21 @@ Partial Class GenerateQR
         Me.TextBox2.Size = New System.Drawing.Size(286, 20)
         Me.TextBox2.TabIndex = 14
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(93, 415)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(229, 23)
+        Me.Button2.TabIndex = 15
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'GenerateQR
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1626, 450)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -170,7 +182,7 @@ Partial Class GenerateQR
         Me.Controls.Add(Me.nm)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.CusID)
+        Me.Controls.Add(Me.text1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Location = New System.Drawing.Point(0, 368)
         Me.Name = "GenerateQR"
@@ -181,7 +193,7 @@ Partial Class GenerateQR
 
     End Sub
 
-    Friend WithEvents CusID As TextBox
+    Friend WithEvents text1 As TextBox
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox1 As PictureBox
@@ -196,4 +208,5 @@ Partial Class GenerateQR
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Button2 As Button
 End Class
