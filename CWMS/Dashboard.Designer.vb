@@ -41,6 +41,7 @@ Partial Class Dashboard
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Button7 = New System.Windows.Forms.Button()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -176,7 +177,7 @@ Partial Class Dashboard
         'Button6
         '
         Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button6.Location = New System.Drawing.Point(16, 499)
+        Me.Button6.Location = New System.Drawing.Point(16, 545)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(242, 43)
         Me.Button6.TabIndex = 14
@@ -235,12 +236,24 @@ Partial Class Dashboard
         Me.PictureBox2.TabIndex = 0
         Me.PictureBox2.TabStop = False
         '
+        'Button7
+        '
+        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button7.Location = New System.Drawing.Point(16, 496)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(242, 43)
+        Me.Button7.TabIndex = 16
+        Me.Button7.Text = "Employee Management"
+        Me.Button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1920, 1080)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
@@ -288,4 +301,5 @@ Partial Class Dashboard
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Button6 As Button
     Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents Button7 As Button
 End Class

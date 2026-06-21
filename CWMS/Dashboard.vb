@@ -184,4 +184,20 @@ Public Class Dashboard
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
         Application.Exit()
     End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        With Staff_register
+            .TopLevel = False
+            Panel1.Controls.Add(Staff_register)
+            Payment.Close()
+            GenTransaction.Close()
+            GenEmReport.Close()
+            Start.Close()
+            .BringToFront()
+            .Show()
+            Time.Show()
+            Dts.Show()
+
+        End With
+    End Sub
 End Class
