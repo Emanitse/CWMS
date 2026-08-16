@@ -84,9 +84,9 @@ Public Class Dashboard
 
     'Payment Button
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        With Payment
+        With Staff_logs
             .TopLevel = False
-            Panel1.Controls.Add(Payment)
+            Panel1.Controls.Add(Staff_logs)
             Start.Close()
             GenTransaction.Close()
             GenEmReport.Close()

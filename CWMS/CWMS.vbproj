@@ -24,6 +24,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>CWMS.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseWinFormsOutOfProcDesigner>False</UseWinFormsOutOfProcDesigner>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,6 +35,7 @@
     <OutputPath>bin\Release\</OutputPath>
     <DocumentationFile>CWMS.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseWinFormsOutOfProcDesigner>False</UseWinFormsOutOfProcDesigner>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>Off</OptionExplicit>
@@ -89,6 +91,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FingerprintScan.Designer.vb">
+      <DependentUpon>FingerprintScan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FingerprintScan.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="GenerateQR.Designer.vb">
       <DependentUpon>GenerateQR.vb</DependentUpon>
@@ -149,6 +157,24 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ScanFingerPrint.Designer.vb">
+      <DependentUpon>ScanFingerPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScanFingerPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_add.Designer.vb">
+      <DependentUpon>Staff_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_logs.Designer.vb">
+      <DependentUpon>Staff_logs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_logs.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Staff_register.Designer.vb">
       <DependentUpon>Staff_register.vb</DependentUpon>
     </Compile>
@@ -165,6 +191,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FingerprintScan.resx">
+      <DependentUpon>FingerprintScan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GenerateQR.resx">
       <DependentUpon>GenerateQR.vb</DependentUpon>
@@ -192,6 +221,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Scan.resx">
       <DependentUpon>Scan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanFingerPrint.resx">
+      <DependentUpon>ScanFingerPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_add.resx">
+      <DependentUpon>Staff_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_logs.resx">
+      <DependentUpon>Staff_logs.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staff_register.resx">
       <DependentUpon>Staff_register.vb</DependentUpon>

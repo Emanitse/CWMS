@@ -37,11 +37,11 @@ Partial Class Dashboard
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Button7 = New System.Windows.Forms.Button()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -122,7 +122,7 @@ Partial Class Dashboard
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button1.Location = New System.Drawing.Point(16, 254)
+        Me.Button1.Location = New System.Drawing.Point(16, 499)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(242, 43)
         Me.Button1.TabIndex = 7
@@ -148,7 +148,7 @@ Partial Class Dashboard
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(242, 43)
         Me.Button3.TabIndex = 9
-        Me.Button3.Text = "Payment "
+        Me.Button3.Text = "Staff Logs"
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button3.UseVisualStyleBackColor = True
         '
@@ -194,6 +194,17 @@ Partial Class Dashboard
         Me.Panel1.Size = New System.Drawing.Size(1642, 1068)
         Me.Panel1.TabIndex = 12
         '
+        'Button7
+        '
+        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button7.Location = New System.Drawing.Point(16, 254)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(242, 43)
+        Me.Button7.TabIndex = 16
+        Me.Button7.Text = "Staff Management"
+        Me.Button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'PictureBox4
         '
         Me.PictureBox4.Location = New System.Drawing.Point(89, 609)
@@ -235,17 +246,6 @@ Partial Class Dashboard
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 0
         Me.PictureBox2.TabStop = False
-        '
-        'Button7
-        '
-        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button7.Location = New System.Drawing.Point(16, 496)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(242, 43)
-        Me.Button7.TabIndex = 16
-        Me.Button7.Text = "Employee Management"
-        Me.Button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button7.UseVisualStyleBackColor = True
         '
         'Dashboard
         '
