@@ -159,7 +159,7 @@ Partial Class Dashboard
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(242, 43)
         Me.Button4.TabIndex = 10
-        Me.Button4.Text = "Generate Transaction"
+        Me.Button4.Text = "Customer Management"
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button4.UseVisualStyleBackColor = True
         '

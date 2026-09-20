@@ -101,9 +101,9 @@ Public Class Dashboard
 
     'Generate Transaction Button
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        With GenTransaction
+        With Customer_Manager
             .TopLevel = False
-            Panel1.Controls.Add(GenTransaction)
+            Panel1.Controls.Add(Customer_Manager)
             Payment.Close()
             Start.Close()
             GenEmReport.Close()
