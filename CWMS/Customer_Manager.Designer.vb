@@ -23,14 +23,13 @@ Partial Class Customer_Manager
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -39,12 +38,21 @@ Partial Class Customer_Manager
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column7, Me.Column5, Me.Column6})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
         Me.DataGridView1.Location = New System.Drawing.Point(12, 81)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(845, 536)
+        Me.DataGridView1.Size = New System.Drawing.Size(745, 536)
         Me.DataGridView1.TabIndex = 0
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(12, 38)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(121, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Register Customer"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Column1
         '
@@ -67,17 +75,9 @@ Partial Class Customer_Manager
         '
         'Column4
         '
-        Me.Column4.HeaderText = "Car Count"
+        Me.Column4.HeaderText = "Vehicle"
         Me.Column4.Name = "Column4"
         Me.Column4.ReadOnly = True
-        '
-        'Column7
-        '
-        Me.Column7.HeaderText = "Register Car"
-        Me.Column7.Name = "Column7"
-        Me.Column7.ReadOnly = True
-        Me.Column7.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Column7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
         'Column5
         '
@@ -90,15 +90,6 @@ Partial Class Customer_Manager
         Me.Column6.HeaderText = "Print ID"
         Me.Column6.Name = "Column6"
         Me.Column6.ReadOnly = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(12, 38)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(121, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Register Customer"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'Customer_Manager
         '
@@ -117,12 +108,11 @@ Partial Class Customer_Manager
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Button1 As Button
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewButtonColumn
     Friend WithEvents Column5 As DataGridViewButtonColumn
     Friend WithEvents Column6 As DataGridViewButtonColumn
-    Friend WithEvents Button1 As Button
 End Class
